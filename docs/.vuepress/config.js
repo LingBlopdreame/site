@@ -10,7 +10,7 @@ module.exports = {
 	theme: 'reco',
 	themeConfig: {
 		type: 'blog',
-		authorAvatar: '/assets/img/logo.png',
+		authorAvatar: '/assets/img/logo.jpg',
 		noFoundPageByTencent: false,
 		subSidebar: 'auto',
 		blogConfig: {
@@ -67,13 +67,7 @@ module.exports = {
  	},
 	plugins: [
 		[
-		  	'vuepress-plugin-mathjax',
-		  	{
-				target: 'svg',
-				macros: {
-			  		'*': '\\times',
-				},
-		  	},
+		  	'@maginapp/vuepress-plugin-katex',
 		],
 		[ 'flowchart' ],
 		[

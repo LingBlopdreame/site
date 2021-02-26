@@ -19,8 +19,6 @@ publish: true
 $ (需要输入的公式) $
 ```
 
-
-
 ### 2. 单行公式
 
 ```markdown
@@ -28,10 +26,6 @@ $$
 (需要输入的公式)
 $$
 ```
-
-快捷键:  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>
-
-
 
 ## 常用算式
 
@@ -61,17 +55,21 @@ $$
 \begin{matrix}
 1 & 2 & 3\\
 4 & 5 & 6\\
-7 & 8 & 9\\
+7 & 8 & 9
 \end{matrix}
 $$
 ```
 
 效果：
-$$ \begin{matrix}
-1 & 2 & 3\\
-4 & 5 & 6\\
-7 & 8 & 9\\
-\end{matrix} $$
+
+$$
+\begin{matrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 
+\end{matrix}
+$$
+
 
 ### 2. 带大括号
 
@@ -90,13 +88,16 @@ $$
 ```
 
 效果：
-$$ \left\{
+
+$$
+\left\{
 \begin{matrix}
 1 & 2 & 3\\
 4 & 5 & 6\\
-7 & 8 & 9\\
+7 & 8 & 9
 \end{matrix}
-\right\} $$
+\right\} 
+$$
 
 ### 3. 带中括号
 
@@ -115,13 +116,15 @@ $$
 ```
 
 效果：
-$$ \left[
-\begin{matrix}
-   1 & 2 & 3 \\
-   4 & 5 & 6 \\
-   7 & 8 & 9
-\end{matrix}
-\right] $$
+
+$$\left[ 
+  \begin{matrix}
+  1 & 2 & 3 \\
+  4 & 5 & 6 \\
+  7 & 8 & 9 
+  \end{matrix}
+\right]
+$$
 
 ### 4. 带参数
 
@@ -140,13 +143,16 @@ $$
 ```
 
 效果：
-$$ \left[
+
+$$
+\left[
     \begin{array}{cc|c}
       1 & 2 & 3 \\
       4 & 5 & 6 \\
       7 & 8 & 9
     \end{array}
-\right] $$
+\right]
+$$
 
 ## 运算符
 
@@ -201,11 +207,14 @@ $$
 ```
 
 效果：
-$$ f(x)=
+
+$$
+f(x)=
 \begin{cases}
-1 & x\geq 0\\
-0 & x<0
-\end{cases} $$
+1 & x \geq 0\\
+0 & x<0 
+\end{cases}
+$$
 
 ## 古希腊字母
 
