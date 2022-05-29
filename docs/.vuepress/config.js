@@ -29,8 +29,7 @@ module.exports = {
 				{ icon: 'reco-mail', text: '782954119@qq.com'}
 			]
 		},
-		nav: 
-		[
+		nav: [
 			{
 				text: 'Home',
 				link: '/',
@@ -60,16 +59,15 @@ module.exports = {
 			{
 				title: 'vuepress-theme-reco',
 				desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-				logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-				link: 'https://vuepress-theme-reco.recoluan.com'
+				logo: "https://v2.vuepress.vuejs.org/icon_vuepress_reco.png",
+				link: 'https://vuepress.vuejs.org/'
 			},
 		]
  	},
+	markdown: {
+		lineNumbers: true,
+	},
 	plugins: [
-		[
-		  	'@maginapp/vuepress-plugin-katex',
-		],
-		[ 'flowchart' ],
 		[
 			"@vuepress-reco/vuepress-plugin-kan-ban-niang",
 			{
@@ -77,8 +75,21 @@ module.exports = {
 				clean: true,
 			}
 		],
-		[
-			'@vuepress-reco/vuepress-plugin-pagation',
-		]
+		// [
+			// 	'copyright',
+			// 	{
+				// 		minLength: 100, // 如果长度超过 100 个字符
+				// 	},
+				// ],
+		[ 
+			'@xiaopanda/vuepress-plugin-code-copy',
+			{
+				buttonAlign: 'bottom',
+			}
+		],
+		[ 'flowchart' ],
+		[ '@vuepress-reco/vuepress-plugin-pagation' ],
+		[ 'vuepress-plugin-nprogress' ],
+		[ 'vuepress-plugin-latex' ],
 	],
 }
